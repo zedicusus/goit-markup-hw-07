@@ -8,33 +8,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
     <!-- Шапка -->
     <header class="header">
       <div class="container">
-        <nav class="nav">
-          <a class="nav-logo" href="./index.html" lang="en"><span>Web</span>Studio</a>
-          <ul class="list">
-            <li class="list-item"><a class="nav-link" href="./index.html">Студия</a></li>
-            <li class="list-item current-page"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-            <li class="list-item"><a class="nav-link" href="">Контакты</a></li>
+        <nav class="site-nav">
+          <a class="logo" href="./index.html" lang="en"><span>Web</span>Studio</a>
+          <ul class="site-nav__list">
+            <li class="site-nav__item site-nav__item--active"><a class="site-nav__link" href="./index.html">Студия</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолио</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="list">
-          <li class="header-list-item">
-            <a class="contact-link" href="mailto:info@devstudio.com">
-              <svg class="contact-icon" width="16" height="16">
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="16">
                 <use href="./images/sprite.svg#icon-envelope">
                 </use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="header-list-item">
-            <a class="contact-link" href="tel:+380961111111">
-              <svg class="contact-icon" width="16" height="16">
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="16" height="16">
                 <use href="./images/sprite.svg#icon-smartphone">
                 </use>
               </svg>
@@ -48,12 +48,12 @@
     <main>
       <section class="section">
         <div class="container">
-          <ul class="list filter-buttons">
-            <li class="filter-button"><button class="btn header-color" type="button">Все</button></li>
-            <li class="filter-button"><button class="btn header-color" type="button">Веб-сайты</button></li>
-            <li class="filter-button"><button class="btn header-color" type="button">Приложения</button></li>
-            <li class="filter-button"><button class="btn header-color" type="button">Дизайн</button></li>
-            <li class="filter-button"><button class="btn header-color" type="button">Маркетинг</button></li>
+          <ul class="list button-set">
+            <li class="button-set__item"><button class="button header-color" type="button">Все</button></li>
+            <li class="button-set__item"><button class="button header-color" type="button">Веб-сайты</button></li>
+            <li class="button-set__item"><button class="button header-color" type="button">Приложения</button></li>
+            <li class="button-set__item"><button class="button header-color" type="button">Дизайн</button></li>
+            <li class="button-set__item"><button class="button header-color" type="button">Маркетинг</button></li>
           </ul>
           <ul class="project-cards list">
             <li class="project-card">
@@ -63,8 +63,8 @@
                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
-              <div class="card-description">
-                <h2 class="header-color">Технокряк</h2>
+              <div class="project-card__description">
+                <h2 class="project-card__title">Технокряк</h2>
                 <p>Веб-сайт</p>
               </div>
             </li>
@@ -75,8 +75,8 @@
                   Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
-              <div class="card-description">
-                <h2 class="header-color">Постер New Orlean vs Golden Star</h2>
+              <div class="project-card__description">
+                <h2 class="project-card__title">Постер New Orlean vs Golden Star</h2>
                 <p>Дизайн</p>
               </div>
             </li>
@@ -87,8 +87,8 @@
                   Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
-              <div class="card-description">
-                <h2 class="header-color">Ресторан Seafood</h2>
+              <div class="project-card__description">
+                <h2 class="project-card__title">Ресторан Seafood</h2>
                 <p>Приложение</p>
               </div>
             </li>
@@ -99,8 +99,8 @@
                   Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
-              <div class="card-description">
-                <h2 class="header-color">Проект Prime</h2>
+              <div class="project-card__description">
+                <h2 class="project-card__title">Проект Prime</h2>
                 <p>Маркетинг</p>
               </div>
             </li>
@@ -111,8 +111,8 @@
                   Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
-              <div class="card-description">
-                <h2 class="header-color">Проект Boxes</h2>
+              <div class="project-card__description">
+                <h2 class="project-card__title">Проект Boxes</h2>
                 <p>Приложение</p>
               </div>
             </li>
@@ -123,8 +123,8 @@
                   Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
-              <div class="card-description">
-                <h2 class="header-color">Inspiration has no Borders</h2>
+              <div class="project-card__description">
+                <h2 class="project-card__title">Inspiration has no Borders</h2>
                 <p>Веб-сайт</p>
               </div>
             </li>
@@ -135,8 +135,8 @@
                   Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
-              <div class="card-description">
-                <h2 class="header-color">Издание Limited Edition</h2>
+              <div class="project-card__description">
+                <h2 class="project-card__title">Издание Limited Edition</h2>
                 <p>Дизайн</p>
               </div>
             </li>
@@ -147,8 +147,8 @@
                   Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
-              <div class="card-description">
-                <h2 class="header-color">Проект LAB</h2>
+              <div class="project-card__description">
+                <h2 class="project-card__title">Проект LAB</h2>
                 <p>Маркетинг</p>
               </div>
             </li>
@@ -159,8 +159,8 @@
                   Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
-              <div class="card-description">
-                <h2 class="header-color">Growing Business</h2>
+              <div class="project-card__description">
+                <h2 class="project-card__title">Growing Business</h2>
                 <p>Приложение</p>
               </div>
             </li>
@@ -171,47 +171,47 @@
 
     <!-- Подвал -->
     <footer class="footer">
-      <div class="container footer-flex">
-        <div class="footer-address-container">
-          <a class="footer-logo" href="./index.html" lang="en"><span>Web</span>Studio</a>
+      <div class="container">
+        <div class="our-contacts">
+          <a class="logo" href="./index.html" lang="en"><span>Web</span>Studio</a>
           <address>
-            <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="list">
-              <li class="footer-item"><a class="footer-link" href="mailto:info@example.com">info@example.com</a></li>
-              <li class="footer-item"><a class="footer-link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+            <p class="our-contacts__address">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="contacts">
+              <li class="contacts__item"><a class="contacts__link" href="mailto:info@example.com">info@example.com</a></li>
+              <li class="contacts__item"><a class="contacts__link" href="tel:+380991111111">+38 099 111 11 11</a></li>
             </ul>
           </address>
         </div>
-        <div class="footer-social-container">
+        <div class="social-container">
           <p class="social-text">Присоиденяйтесь</p>
-          <ul class="footer-social social-list">
-            <li class="social-item">
-              <a href="" class="social-link">
-                <svg class="social-icon" width="20" height="20">
+          <ul class="socials">
+            <li class="social">
+              <a href="" class="social__link">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-instagram">
                   </use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a href="" class="social-link">
-                <svg class="social-icon" width="20" height="20">
+            <li class="social">
+              <a href="" class="social__link">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-twitter">
                   </use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a href="" class="social-link">
-                <svg class="social-icon" width="20" height="20">
+            <li class="social">
+              <a href="" class="social__link">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-facebook">
                   </use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a href="" class="social-link">
-                <svg class="social-icon" width="20" height="20">
+            <li class="social">
+              <a href="" class="social__link">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-linkedin">
                   </use>
                 </svg>
@@ -219,15 +219,17 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form">
-          <p class="footer-form-title">Подпишитесь на рассылку</p>
-          <input class="footer-input" type="email" name="user-email" placeholder="Email">
-          <button class="footer-form-button" type="submit">
+        <form class="mailing-form">
+          <p class="mailing-form__title">Подпишитесь на рассылку</p>
+          <div class="input-container">
+          <input class="mailing-form__email" type="email" name="user-email" placeholder="Email">
+          <button class="button" type="submit">
             Подписаться
-            <svg class="footer-button-icon" width="24" height="24">
+            <svg class="button__icon" width="24" height="24">
             	<use href="./images/sprite.svg#icon-footer-send"></use>
             </svg>
           </button>
+          </div>
         </form>
       </div>
     </footer>
