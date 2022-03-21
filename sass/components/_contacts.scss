@@ -1,0 +1,33 @@
+.contacts {
+}
+
+.contacts__item {
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  
+  color: $text-color;
+  
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  .contacts__item:hover &,
+  .contacts__item:focus & {
+    color: $accent-color;
+  }
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  .contacts__item:hover &,
+  .contacts__item:focus & {
+    color: $accent-color;
+  }
+}
