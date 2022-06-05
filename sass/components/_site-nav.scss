@@ -34,3 +34,19 @@ transition-property: color;
     color: $accent-color;
   }
 }
+
+.site-nav__list {
+  display: flex;
+}
+
+.site-nav--logo {
+  margin-right: 93px;
+}
+
+.site-nav--contacts {
+  display: flex;
+}
+
+.site-nav--contacts__item:first-child {
+  margin-right: 50px;
+}

@@ -1,0 +1,30 @@
+.mailing-form {
+  padding-top: 12px;
+}
+
+.mailing-form__title {
+  margin-bottom: 20px;
+  color: $bg-color;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.mailing-form__email {
+  height: 50px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding-left: 16px;
+  margin-right: 12px;
+  background-color: transparent;
+  color: $bg-color;
+}

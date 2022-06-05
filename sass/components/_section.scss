@@ -1,0 +1,22 @@
+.section {
+  padding: 94px 0;
+  background-color: $bg-color;
+}
+
+.section__heading {
+  margin-bottom: 50px;
+  text-align: center;
+  color: $text-secondary-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.section--team {
+  background-color: $section-secondary-color;
+}
+
+.section--work {
+  padding-top: 0;
+}

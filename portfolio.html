@@ -14,15 +14,15 @@
     <header class="header">
       <div class="container header__container">
         <nav class="site-nav">
-          <a class="logo link" href="./index.html" lang="en"><span>Web</span>Studio</a>
+          <a class="logo link site-nav--logo" href="./index.html" lang="en"><span>Web</span>Studio</a>
           <ul class="site-nav__list list">
             <li class="site-nav__item"><a class="site-nav__link link" href="./index.html">Студия</a></li>
             <li class="site-nav__item site-nav__item--active"><a class="site-nav__link link" href="./portfolio.html">Портфолио</a></li>
             <li class="site-nav__item"><a class="site-nav__link link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="contacts list">
-          <li class="contacts__item">
+        <ul class="contacts list site-nav--contacts">
+          <li class="contacts__item site-nav--contacts__item">
             <a class="contacts__link link" href="mailto:info@devstudio.com">
               <svg class="contacts__icon" width="16" height="16">
                 <use href="./images/sprite.svg#icon-envelope">
@@ -31,7 +31,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item site-nav--contacts__item">
             <a class="contacts__link link" href="tel:+380961111111">
               <svg class="contacts__icon" width="16" height="16">
                 <use href="./images/sprite.svg#icon-smartphone">
@@ -47,12 +47,12 @@
     <main>
       <section class="section">
         <div class="container">
-          <ul class="list button-set">
-            <li class="button-set__item"><button class="button header-color" type="button">Все</button></li>
-            <li class="button-set__item"><button class="button header-color" type="button">Веб-сайты</button></li>
-            <li class="button-set__item"><button class="button header-color" type="button">Приложения</button></li>
-            <li class="button-set__item"><button class="button header-color" type="button">Дизайн</button></li>
-            <li class="button-set__item"><button class="button header-color" type="button">Маркетинг</button></li>
+          <ul class="button-set list">
+            <li class="button-set__item"><button class="button-set__btn" type="button">Все</button></li>
+            <li class="button-set__item"><button class="button-set__btn" type="button">Веб-сайты</button></li>
+            <li class="button-set__item"><button class="button-set__btn" type="button">Приложения</button></li>
+            <li class="button-set__item"><button class="button-set__btn" type="button">Дизайн</button></li>
+            <li class="button-set__item"><button class="button-set__btn" type="button">Маркетинг</button></li>
           </ul>
           <ul class="project-cards list">
             <li class="project-card">
@@ -170,47 +170,47 @@
 
     <!-- Подвал -->
     <footer class="footer">
-      <div class="container">
-        <div class="our-contacts">
-          <a class="logo" href="./index.html" lang="en"><span>Web</span>Studio</a>
+      <div class="container footer--container">
+        <div class="our-contacts footer--our-contacts">
+          <a class="logo link footer--logo" href="./index.html" lang="en"><span>Web</span>Studio</a>
           <address>
             <p class="our-contacts__address">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="contacts">
-              <li class="contacts__item"><a class="contacts__link" href="mailto:info@example.com">info@example.com</a></li>
-              <li class="contacts__item"><a class="contacts__link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+            <ul class="contacts list">
+              <li class="contacts__item footer--contacts__item"><a class="contacts__link link footer--contacts__link" href="mailto:info@example.com">info@example.com</a></li>
+              <li class="contacts__item footer--contacts__item"><a class="contacts__link link footer--contacts__link" href="tel:+380991111111">+38 099 111 11 11</a></li>
             </ul>
           </address>
         </div>
-        <div class="social-container">
+        <div class="social-container footer--social-container">
           <p class="social-text">Присоиденяйтесь</p>
-          <ul class="socials">
+          <ul class="socials list">
             <li class="social">
-              <a href="" class="social__link">
-                <svg class="social__icon" width="20" height="20">
+              <a href="" class="social__link link footer--social__link">
+                <svg class="social__icon footer--social__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-instagram">
                   </use>
                 </svg>
               </a>
             </li>
             <li class="social">
-              <a href="" class="social__link">
-                <svg class="social__icon" width="20" height="20">
+              <a href="" class="social__link link footer--social__link">
+                <svg class="social__icon footer--social__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-twitter">
                   </use>
                 </svg>
               </a>
             </li>
             <li class="social">
-              <a href="" class="social__link">
-                <svg class="social__icon" width="20" height="20">
+              <a href="" class="social__link link footer--social__link">
+                <svg class="social__icon footer--social__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-facebook">
                   </use>
                 </svg>
               </a>
             </li>
             <li class="social">
-              <a href="" class="social__link">
-                <svg class="social__icon" width="20" height="20">
+              <a href="" class="social__link link footer--social__link">
+                <svg class="social__icon footer--social__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-linkedin">
                   </use>
                 </svg>
@@ -222,7 +222,7 @@
           <p class="mailing-form__title">Подпишитесь на рассылку</p>
           <div class="input-container">
           <input class="mailing-form__email" type="email" name="user-email" placeholder="Email">
-          <button class="button" type="submit">
+          <button class="button footer--button" type="submit">
             Подписаться
             <svg class="button__icon" width="24" height="24">
             	<use href="./images/sprite.svg#icon-footer-send"></use>
