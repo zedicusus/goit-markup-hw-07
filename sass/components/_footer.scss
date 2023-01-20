@@ -27,6 +27,11 @@
   color: #fff;
   opacity: 60%;
   font-style: normal;
+
+  .footer--contacts__item &:hover,
+  .footer--contacts__item &:focus {
+    color: #fff;
+  }
 }
 
 .footer--social-container {

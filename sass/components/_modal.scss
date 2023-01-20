@@ -107,6 +107,11 @@
 .hero-form__input {
   height: 40px;
   fill: $text-secondary-color;
+
+  &:focus {
+    border-color: $accent-color;
+    outline: none;
+  }
 }
 
 .hero-form__textarea {
@@ -122,6 +127,11 @@
     font-size: 12px;
     line-height: 1.2;
   }
+
+  &:focus {
+    border-color: $accent-color;
+    outline: none;
+  }
 }
 
 .icon-container {
@@ -131,7 +141,7 @@
   margin-bottom: 10px;
 }
 
-.form-icon {
+.hero-form__icon {
 	position: absolute;
 	left: 12px;
 	top: 50%;
@@ -139,6 +149,10 @@
 	transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .hero-form__input:focus + & {
+    fill: $accent-color;
+  }
 }
 
 .hero-form__label-agree {
@@ -146,6 +160,7 @@
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 30px;
+  margin-top: 20px;
 
   &::before {
     display: block;
@@ -161,3 +176,21 @@
   }
 }
 
+.form-input-agree:focus + .hero-form__label-agree:before {
+	border-color:$accent-color;
+}
+
+.form-input-agree:checked + .hero-form__label-agree:before {
+	background-color: $accent-color;
+	background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-form__link {
+  color: $accent-color;
+}
+
+.button--hero-form {
+  min-width: 200px;
+}

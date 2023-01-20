@@ -31,14 +31,10 @@ Use a better box model (opinionated).
 3. Use a more readable tab size (opinionated).
 */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-  -moz-tab-size: 4;
-  /* 3 */
-  tab-size: 4;
-  /* 3 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
 }
 
 /*
@@ -50,10 +46,8 @@ Sections
 2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 body {
-  margin: 0;
-  /* 1 */
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  /* 2 */
+  margin: 0; /* 1 */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
 }
 
 /*
@@ -65,10 +59,8 @@ Grouping content
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 */
 hr {
-  height: 0;
-  /* 1 */
-  color: inherit;
-  /* 2 */
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
 }
 
 /*
@@ -98,10 +90,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -139,10 +129,8 @@ Tabular data
 2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
 */
 table {
-  text-indent: 0;
-  /* 1 */
-  border-color: inherit;
-  /* 2 */
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
 }
 
 /*
@@ -158,14 +146,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -236,10 +220,8 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -254,10 +236,8 @@ Remove the inner padding in Chrome and Safari on macOS.
 2. Change font properties to 'inherit' in Safari.
 */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /*
@@ -420,7 +400,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts__item:hover .contacts__icon, .contacts__item:focus .contacts__icon {
-  color: #2196f3;
+  fill: #2196f3;
 }
 
 .container {
@@ -473,6 +453,9 @@ img {
   color: #fff;
   opacity: 60%;
   font-style: normal;
+}
+.footer--contacts__item .footer--contacts__link:hover, .footer--contacts__item .footer--contacts__link:focus {
+  color: #fff;
 }
 
 .footer--social-container {
@@ -961,6 +944,10 @@ img {
   height: 40px;
   fill: #212121;
 }
+.hero-form__input:focus {
+  border-color: #2196f3;
+  outline: none;
+}
 
 .hero-form__textarea {
   height: 120px;
@@ -975,6 +962,10 @@ img {
   font-size: 12px;
   line-height: 1.2;
 }
+.hero-form__textarea:focus {
+  border-color: #2196f3;
+  outline: none;
+}
 
 .icon-container {
   position: relative;
@@ -983,7 +974,7 @@ img {
   margin-bottom: 10px;
 }
 
-.form-icon {
+.hero-form__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -992,12 +983,16 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.hero-form__input:focus + .hero-form__icon {
+  fill: #2196f3;
+}
 
 .hero-form__label-agree {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 .hero-form__label-agree::before {
   display: block;
@@ -1010,4 +1005,23 @@ img {
   transition-property: border-color, background-color, background-image;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input-agree:focus + .hero-form__label-agree:before {
+  border-color: #2196f3;
+}
+
+.form-input-agree:checked + .hero-form__label-agree:before {
+  background-color: #2196f3;
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-form__link {
+  color: #2196f3;
+}
+
+.button--hero-form {
+  min-width: 200px;
 }/*# sourceMappingURL=main.css.map */
